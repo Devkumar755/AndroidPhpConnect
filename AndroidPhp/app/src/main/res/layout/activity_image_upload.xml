@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ImageUpload">
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imageobject"
+        android:visibility="gone"
+        android:layout_marginTop="30dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter the tile of image"
+        android:id="@+id/titleimage"
+        android:layout_below="@+id/imageobject"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/choosebtn"
+        android:enabled="true"
+        android:layout_below="@+id/titleimage"
+        android:text="Choose Image"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/uploadebtn"
+        android:text="Upload Image"
+        android:enabled="false"
+        android:layout_below="@+id/choosebtn"
+        android:layout_centerHorizontal="true"/>
+
+
+
+</RelativeLayout>
